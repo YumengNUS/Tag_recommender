@@ -1,3 +1,19 @@
+# Tag Suggestion API
+This repository contains the implementation of a prototype API designed to suggest additional tags for posts. The API takes an input list of initial tags and suggests additional relevant tags to improve discoverability, engagement, and community participation.
+
+# Project Motivation
+Tags are crucial for making content discoverable. However, many users either do not tag their posts or use suboptimal tags that fail to reach their target audience. For example:
+
+A user may use a niche tag like #orchids (1k followers) without realizing that the broader community #plantlover (189k followers) exists.
+They might apply high-level tags such as #travel (24M followers) but miss out on smaller, engaged communities like #roadtrip or #national park.
+This project aims to address these challenges by building an API that suggests tags to enhance post visibility and engagement.
+
+# Features
+The API offers the following features:
+
+1. Tag Suggestion: Accepts an input list of tags (e.g., gardening, flowers) and suggests additional tags to improve discoverability. Each suggestion is accompanied by a relevance score.
+2. Customization: Allows users to set a limit on the number of suggested tags (default: 5). Additional parameters can be included for flexibility in the future.
+
 # data_processing.py: 
 data cleaning and data processing. Will generate inverted index (store into inverted_indexes_full_dataset.jsonl) and forward index (store into forward_indexes_full_dataset.jsonl)
 # tag_recommander.py: 
